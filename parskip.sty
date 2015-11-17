@@ -1,0 +1,55 @@
+% This is PARSKIP.STY by H.Partl, TU Wien, as of 19 Jan 1989.
+%% IMPROVED (?) by Martin Maechler, ETH Zurich --- added -- \ParFact --
+%% ~~~~~~~~     and more.
+%%
+%% User may
+% Document Style Option to be used with any style and with any size.
+% It produces the following Paragraph Layout:
+%     Zero Parindent and non-zero Parskip. The stretchable glue in \parskip
+%     helps LaTeX in finding the best place for page breaks.
+\ifx\ParFact\undefined\def\ParFact{0.5}\fi
+\ifx\ParsepskipRatio\undefined\def\ParsepskipRatio{0.6}\fi
+%
+\def\@setparskip{\parskip=\ParFact\baselineskip \advance\parskip by 0pt plus 2pt}
+\@setparskip
+%latex only, want to be able to use with text\parindent=\z@
+\parindent=0pt
+
+%%% Problem: This is NOT nice for  table-of-contents !! ---  (M.Maechler)
+%% My 'fix':     
+\let\oldtableofcontents=\tableofcontents
+\def\tableofcontents{\parskip=0pt \oldtableofcontents \@setparskip}
+
+%%%% I (Martin Maechler) think that the following is fundamentally wrong.
+%%%% Probably it's not (only) \parsep but (also) something else that should
+%%%% be adapted...
+%%%% I only changed by introducing the \ParsepskipRatio  FACTOR  instead of 1 :
+
+% To accompany this, the vertical spacing in the list environments is changed
+% to use the same as \parskip in all relevant places (for normalsize only):
+%   \parsep = \parskip
+%   \itemsep = \z@ % add nothing to \parskip between items
+%%>>> Would like : \itemsep + \parskip == OLDitemsep + OLDparskip
+%%>>> ==>  \itemsep = OLDitemsep - parskip
+%   \topsep = \z@ % add nothing to \parskip before first item
+ 
+%%% Problem: This is STILL QUITE HORRIBLE for all lists , e.g., {itemize}:
+%%%	     Much too much spacing !!	---- (M.Maechler)
+%%% Comment it out (does not help)	---- (M.Maechler)
+%%%==> instead of   \parsep\parskip,  I am trying   \parsep \ParsepskipRatio\parskip
+\def\@listI{\leftmargin\leftmargini
+   \topsep\z@ \parsep\ParsepskipRatio\parskip \itemsep\z@}
+\let\@listi\@listI
+\@listi
+     
+\def\@listii{\leftmargin\leftmarginii
+   \labelwidth\leftmarginii\advance\labelwidth-\labelsep
+   \topsep\z@ \parsep\ParsepskipRatio\parskip \itemsep\z@}
+     
+\def\@listiii{\leftmargin\leftmarginiii
+    \labelwidth\leftmarginiii\advance\labelwidth-\labelsep
+    \topsep\z@ \parsep\ParsepskipRatio\parskip \itemsep\z@}
+     
+% Note that listiv, listv and listvi don't change vertical parameters.
+
+\endinput
