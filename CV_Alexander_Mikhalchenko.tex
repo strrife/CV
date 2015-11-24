@@ -22,7 +22,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.65in,top=0.5in,right=0.65in,bottom=0.5in]{geometry} % Document margins
 \usepackage{hyperref}
 \usepackage{array} 
 \usepackage{textpos}
@@ -36,8 +36,8 @@
 
 \name{Alexander Mikhalchenko} % Your name
 \address{Belarus, Minsk 220113} % Your address
+\address{Linkedin: \href{http://linkedin.com/in/mikhalchenkoa}{linkedin.com/in/mikhalchenkoa}  StackOverflow: \href{http://stackoverflow.com/users/2044039}{stackoverflow.com/users/2044039}} \\
 \address{+37525$\cdot$951$\cdot$48$\cdot$81 \\ alexander.a.mikhalchenko@gmail.com \\ skype:strrife } % Your phone number and email
-\address{Linkedin: \href{http://linkedin.com/in/mikhalchenkoa}{linkedin.com/in/mikhalchenkoa}}
 
 \begin{document}
 
@@ -47,9 +47,7 @@
 
 \begin{rSection}{Summary}
 
-I'm skilled fast-learning developer with a strong mathematical background. Over the past years I have worked with a variety of web technologies and I'm experenced in backend (NodeJS, PHP), frontend (Javascript ES5, ES6, Angular, Aurelia, React), databases (MySQL, MongoDB, Redis) and Software architecture. I have good communication skills and ~2 years of working in different teams.
-
-I'm constantly looking for ways to apply and enrich my knowledge. 
+I'm skilled fast-learning developer with a strong mathematical background constantly looking for ways to apply and enrich my knowledge. Over the past years I have worked with a variety of web technologies and I'm experenced in backend, frontend, databases and software architecture. I have good communication skills and ~2 years of working in different teams.
 
 Lookig forward to hearing from you!
 
@@ -62,39 +60,19 @@ Lookig forward to hearing from you!
 
 \begin{rSection}{Technical Strengths}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-JavaScript (3 years) & ES6, ES7; Angular, Aurelia, JSPM, Bower, jQuery, \\
- & Isomorphic apps, React, JSLint \\
-NodeJS (1 year) & Express, NPM, Grunt, Gulp, Yeoman, Browserify \\
-PHP 5.3+ (2 years) & PHP7, Symfony 2, Symfony 1.4, Wordpress, Silex, \\
- & Composer, Doctrine, PDO, phpredis, PHPOffice \\
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+JavaScript (3 years) & ES6, Angular, Aurelia, JSPM, Bower, jQuery, Isomorphic apps, React \\
+NodeJS (1 year) & Express, NPM, Grunt, Gulp, Yeoman, Browserify, JSLint \\
+PHP 5.3+ (3 years), PHP7 & Symfony 2, Symfony 1.4, Wordpress, Silex, Composer, Doctrine, PDO \\
 MySQL, SQLite (2 years) & MySQLi, InnoDB; Raw and with ORMs \\
 MongoDB, Redis (1 year) & ElasticSearch, Mongoose, MapReduce \\
 HTML/XML (3 years) & HTML5, DOM, Schema, SAX, Canvas \\
-CSS/SASS/LESS (2 years) & CSS3, Bootstrap, Flat UI \\
+CSS (2 years) & SASS, LESS, CSS3, Bootstrap, Flat UI \\
 Testing & Mocha, Karma, Selenium, PHPUnit, Nightmare.js \\
-AWS & EC, S3, SQS  \\
-Other Languages & Python (worked with OpenCV), Java, C/C++, C\# \\
+Other & AWS (EC, S3, SQS), Python (NumPy, OpenCV), C/C++, C\# (.NET) \\
+ & Java (Spring, Swing), lots of APIs (Dropbox, Google, Mangopay, etc) \\
 VCS & Git, Perforce \\
 \end{tabular}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-{\bf Belarussian State University, Belarus} \hfill {\em 2012 $-$ Present} \\ 
-Bachelor Degree in Computer Science \& Mathematics \\
-Minor in Intelligent Control Systems \smallskip \\
-Courses taken: Algorithms, Pattern recognition, Natural Text Processing, Calculus, etc. \smallskip \\
-Average: 9.47
-
-{\bf Belarussian State University Lyceum, Belarus} \hfill {\em 2010 $-$ 2012} \\ 
-Associate degree in Mathematics \\
-Average: 9.8
 
 \end{rSection}
 
@@ -105,38 +83,29 @@ Average: 9.8
 \begin{rSection}{Work experience}
 
 \begin{rSubsection}{DualLab}{August 2015 - Present}{Full stack Web Developer}{Minsk, Belarus}
-\item Development of the web client and the REST API layer on top of the legacy SOAP API
-\item NodeJS and Express used for backend, Angular for frontend
-\item Nightmare.js and Mocha for testing
-\item Test-driven development
+\item Was responsible for development of the web client and the REST API on top of the legacy SOAP API
+\item NodeJS + Express used for backend, Angular for frontend 
+\item Test-driven development (Nightmare.js and Mocha for testing)
 \item Agile Software Development (Scrum)
 \item Recommendations from my team leader and colleagues can be found on my \href{http://linkedin.com/in/mikhalchenkoa}{linkedin profile}
 \end{rSubsection}
 
-\clearpage
-
-
 %------------------------------------------------
 
 \begin{rSubsection}{StarOfService}{April 2014 - August 2015}{Full stack Web Developer}{Paris, France}
-\item back-end development (PHP, Symfony 1.4)
+\item PHP, Symfony 1.4 for backend; Angular, jQuery for frontend
 \item integration with AWS (SQS in particular)
-\item data analysis \& Mixpanel integration
-\item the TF-IDF based search engine for the homepage
-\item developing from scratch and maintaining the REST API for the iPhone app 
-\item backend request moderaton tool, duplicate searching algorithms
-\item front-end development (Angular, jQuery)
+\item Data mining: TF-IDF-based search engine for the homepage, Mixpanel, duplicate requests detector
+\item REST API (designed by me from scratch) for the iPhone app 
 \item Agile Software Development (Kanban)
 \item Recommendations from the CEO, CTO and my team leader can be found on my \href{http://linkedin.com/in/mikhalchenkoa}{linkedin profile}
 \end{rSubsection}
-
 %------------------------------------------------
 
 \begin{rSubsection}{Athena Art}{February 2014 - April 2014}{Wordpress Developer}{Italy, Torino}
 \item Wordpress customization (creating custom post type managers)
 \item Load speed optimization (page load time reduced from 1.5s to 0.03s with custom redis-based solution)
 \end{rSubsection}
-
 %------------------------------------------------
 
 \begin{rSubsection}{Itransition}{October 2013 - January 2014}{PHP developer}{Minsk, Belarus}
@@ -146,6 +115,8 @@ Average: 9.8
 \end{rSubsection}
 
 \end{rSection}
+
+\clearpage
 
 %----------------------------------------------------------------------------------------
 %	Other projects
@@ -166,6 +137,23 @@ Dynamically updating World of Warcraft and other games inner currency rates. Dev
 
 %----------------------------------------------------------------------------------------
 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Belarussian State University, Belarus} \hfill {\em 2012 $-$ Present} \\ 
+Bachelor Degree in Computer Science \& Mathematics \\
+Minor in Intelligent Control Systems \smallskip \\
+Courses taken: Algorithms, Pattern recognition, Natural Text Processing, Calculus, etc. \smallskip \\
+Average: 9.47
+
+{\bf Belarussian State University Lyceum, Belarus} \hfill {\em 2010 $-$ 2012} \\ 
+Associate degree in Mathematics \\
+Average: 9.8
+
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	Mathematics
@@ -196,18 +184,6 @@ Dynamically updating World of Warcraft and other games inner currency rates. Dev
 
 \end{rSection}
 
-\clearpage
-
-\begin{rSection}{Links and contacts}
-
-\item Linkedin: \href{http://linkedin.com/in/mikhalchenkoa}{linkedin.com/in/mikhalchenkoa}
-\item StackOverflow: \href{http://stackoverflow.com/users/2044039}{stackoverflow.com/users/2044039}
-\item StackOverflow Careers: \href{http://careers.stackoverflow.com/mikhalchenko}{careers.stackoverflow.com/mikhalchenko}
-\item Phone: +37525$\cdot$951$\cdot$48$\cdot$81
-\item E-mail \href{mailto:alexander.a.mikhalchenko@gmail.com}{alexander.a.mikhalchenko@gmail.com}
-\item Skype: \href{skype:strrife}{strrife}
-\end{rSection}
-
 \begin{rSection}{Publications}
 
 {\bf "Sentimental corpus of texts generating system for solving semantic web problems in tourism domain"}
@@ -217,12 +193,6 @@ Presented at the 72th BSU Scientific Conference (May 15, 2015). Approved for pub
 
 \end{rSection}
 
-
-\begin{rSection}{Hobbies and interests}
-
-Music, keeping fit (swimming, fitness), literature (slowly writing a fictional book during the past 2 years).
-
-\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
