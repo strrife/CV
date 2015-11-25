@@ -22,7 +22,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.65in,top=0.5in,right=0.65in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
 \usepackage{hyperref}
 \usepackage{array} 
 \usepackage{textpos}
@@ -31,8 +31,9 @@
 \usepackage{enumitem}
 \usepackage[russian,english]{babel}
 \setcounter{secnumdepth}{4}
+
 \begin{textblock}{7}(0, 0.05)
-{\includegraphics[width=.23\linewidth]{photo.jpg}}
+%{\includegraphics[width=.23\linewidth]{photo.jpg}}
 \end{textblock}
 
 \name{Alexander Mikhalchenko} % Your name
@@ -48,7 +49,9 @@
 
 \begin{rSection}{Summary}
 
-I'm skilled fast-learning developer with a strong mathematical background constantly looking for ways to apply and enrich my knowledge. Over the past years I have worked with a variety of web technologies and I'm experienced in backend, frontend, databases and software architecture. I have good communication skills and ~2 years of working in different teams.
+I'm skilled fast-learning developer with a strong mathematical background, constantly looking for ways to apply and enrich my knowledge.
+Over the past years I've worked with a variety of web technologies, I'm experienced in backend, frontend, databases and software architecture.
+Empathic communicator.
 
 \end{rSection}
 
@@ -62,11 +65,9 @@ I'm skilled fast-learning developer with a strong mathematical background consta
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
 JavaScript (3 years) & ES6, Angular, Aurelia, JSPM, Bower, jQuery, Isomorphic apps, React \\
 NodeJS (1 year) & Express, NPM, Grunt, Gulp, Yeoman, Browserify, JSLint \\
-PHP 5.3+ (3 years), PHP7 & Symfony 2, Symfony 1.4, Wordpress, Silex, Composer, Doctrine, PDO \\
-MySQL, SQLite (2 years) & MySQLi, InnoDB; Raw and with ORMs \\
-MongoDB, Redis (1 year) & ElasticSearch, Mongoose, MapReduce \\
-HTML/XML (3 years) & HTML5, DOM, Schema, SAX, Canvas \\
-CSS (2 years) & SASS, LESS, CSS3, Bootstrap, Flat UI \\
+PHP 5.3+ (3 years) & Symfony (1.4, 2.*), PHP7, Wordpress, Silex, Composer, Doctrine, PDO \\
+Databases (2 years) & MySQL (MySQLi, InnoDB), MongoDB (ElasticSearch, MapReduce), Redis \\
+HTML/CSS (3 years) & HTML5, DOM, Schema, Canvas, SASS/LESS, CSS3, Bootstrap, Flat UI \\
 Testing & Mocha, Karma, Selenium, PHPUnit, Nightmare.js \\
 Other & AWS (EC, S3, SQS), Python (NumPy, OpenCV), C/C++, C\# (.NET) \\
  & Java (Spring, Swing), lots of APIs (Dropbox, Google, Mangopay, etc) \\
@@ -81,19 +82,16 @@ VCS & Git, Perforce \\
 
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{DualLab}{August 2015 - Present}{Full stack Web Developer}{Minsk, Belarus}
+\begin{rSubsection}{DualLab}{August 2015 - Present}{Full stack Web Developer. Can't diclose product name due to NDA.}{Minsk, Belarus}
 \item NodeJS + Express used for backend, Angular for frontend 
-\item Test-driven development (Nightmare.js and Mocha for testing)
-\item Agile Software Development (Scrum)
+\item TDD (Nightmare.js, Mocha), Agile (Scrum)
 \item Recommendations from my team leader and colleagues can be found on my \href{http://linkedin.com/in/mikhalchenkoa}{linkedin profile}
 
-{\bf Projects}:
+%{\bf Projects}:
 
 \begin{itemize}[leftmargin=*,label={$+$}]
-  \item {\bf REST API} \\
-	Created API on top of the existing legacy gSOAP API. 
-  \item {\bf Web client} \\
-	Worked on the prototype for the web client (products's name can't be disclosed due to NDA).
+  \item {\bf REST API}.  Created API on top of the existing legacy gSOAP API.
+  \item {\bf Web client}.Worked on the prototype for the web client.
 \end{itemize}
 
 \end{rSubsection}
@@ -105,61 +103,60 @@ VCS & Git, Perforce \\
 \item Agile Software Development (Kanban)
 \item Recommendations from the CEO, CTO and my team leader can be found on my \href{http://linkedin.com/in/mikhalchenkoa}{linkedin profile}
 
-{\bf Projects}:
+%{\bf Projects}:
 
 \begin{itemize}[leftmargin=*,label={$+$}]
-  \item {\bf API} for the \href{https://itunes.apple.com/fr/app/starofservice/id948344674?mt=8}{StarOfService iPhone app} \\
-	Developed the API from scratch, it implements all customer functionality of StarOfService website.
-  \item {\bf Sherlock} the service search engine \\
-	TF-IDF based search engine for service lookup for the \href{http://www.starofservice.com/}{homepage}
-  \item {\bf Request moderation tool} \\
-	A tool to moderate user's request based on user scoring system and request similarity.
-	\clearpage
-  \item {\bf Integration with AWS} \\
-	Took care of SQS integration, participated in S3 integration.
-  \item {\bf Data mining and analysis tools} \\
-	Integrated with {\bf Mixpanel}, set up funnels, created admin interfaces for site statistics (d3, Highcharts)
-  \item {\bf UX implementation} \\
-	Implemented the UX mockups for new signup, search for pros, pro profiles with Angular and bootstrap. 
+  \item {\bf API} for the \href{https://itunes.apple.com/fr/app/starofservice/id948344674?mt=8}{iPhone app}
+  \item {\bf Sherlock} (TF-IDF search engine for service lookup)
+  \item {\bf Request moderation tool} (user scoring system, request similarity algorithms)
+  \item {\bf AWS integration} (SQS, S3 integration)
+  \item {\bf Data mining and analysis tools} (Mixpanel, funnel setup, stats monitor (d3, Highcharts))
+  \item {\bf PSD2HTML} (Implemented new signup, search for pros \& requests with Angular \& bootstrap).
 \end{itemize}
 
 \end{rSubsection}
-%------------------------------------------------
-
-\begin{rSubsection}{Athena Art}{February 2014 - April 2014}{Wordpress Developer}{Italy, Torino}
-\item Wordpress customization (creating custom post type managers)
-\item Load speed optimization (page load time reduced from 1.5s to 0.03s with custom redis-based solution)
-\end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Itransition}{October 2013 - January 2014}{PHP developer}{Minsk, Belarus}
-\item Symfony web developer (traineeship + work)
-\item Symfony 2.2 as backend, jQuery + Bootstrap 3 as frontend, worked on a shop catalog system
-\end{rSubsection}
+\begin{rSubsection}{Athena Art}{February 2014 - April 2014}{Wordpress Developer. Can't diclose product name}{Italy, Torino}
+%Actually I just don't want "thelordofporn" be in my cv. I though about it alot and decided that I'd rather ommit the name.  %
+\item PHP, Wordpress for backend, Custom legacy CSS framework \& jQuery for frontend
 
-%------------------------------------------------
-
-\begin{rSubsection}{Coding for fun}{2012 - Present}{Working on my or my friends' projects/startups}{Minsk, Belarus}
+%{\bf Projects}:
 
 \begin{itemize}[leftmargin=*,label={$+$}]
-  \item {\bf \href{http://toto.by}{ToTo.by}} \\ 
-	My friend's project that organizes and accumulates all car-related information in Belarus, helping people with the rutine of finding service stations, selling and buying vehicles.
+  \item {\bf Custom post type manager}
+  \item {\bf Speed optimization} (Custom Redis-based caching solution)
+\end{itemize}
+
+\end{rSubsection}
+\clearpage
+
+%------------------------------------------------
+
+\begin{rSubsection}{Itransition}{October 2013 - January 2014}{Intern. Can't diclose more due to NDA.}{Minsk, Belarus}
+\item Symfony 2.2 as backend, jQuery + Bootstrap 3 as frontend
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Coding for fun}{2012 - Present}{Coding for fun and working on startups with my friends}{Minsk, Belarus}
+
+\begin{itemize}[leftmargin=*,label={$+$}]
+  \item {\bf \href{http://toto.by}{ToTo.by}} \hfill {\em from November 2015}  \\
+	My friend's project that accumulates all car-related information in Belarus, helping people to find service stations, sell and buy vehicles.
 
   \item {\bf \href{http://pirateminds.com/e-analytics}{E-Analytics}} \hfill {\em October 2015} \\ 
-	BI application with recommendation engine for retail and e-commerce (business analysis, feasibility study, marketing research).
+	BI application with recommendation engine for retail and e-commerce.
 
   \item {\bf \href{http://boxinator.xyz}{Boxinator}} \hfill {\em September 2015} \\ 
-	Cloud-based workflow management system developed with NodeJS using Dropbox API. Presented at Minsk FinTech hackaton.
+	Cloud-based workflow management system developed with NodeJS using Dropbox. Presented at Minsk FinTech hackaton.
 
-  \item {\bf \href{http://mmopricefinder.com}{MMOPriceFinder.com}} \hfill {\em July 2014} 
-	Dynamically updating World of Warcraft and other games inner currency rates. Developed with Symfony 2, Angular JS and Flat UI \\
+  \item {\bf \href{http://mmopricefinder.com}{MMOPriceFinder.com}} \hfill {\em July 2014} \\
+	Dynamically updating World of Warcraft and other games inner currency rates. Developed with Symfony 2, Angular JS and Flat UI
 \end{itemize}
-
 \end{rSubsection}
-
 \end{rSection}
-
 %----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
@@ -167,16 +164,12 @@ VCS & Git, Perforce \\
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
+{\bf Belarussian State University, Belarus} \hfill {\em 2012 $-$ Present} \\
+Bachelor Degree in Computer Science, minor in Intelligent Control Systems \hfill {\em Average: 9.4} \\
+Courses taken: Algorithms, Pattern recognition, Natural Text Processing, Calculus, etc.
 
-{\bf Belarussian State University, Belarus} \hfill {\em 2012 $-$ Present} \\ 
-Bachelor Degree in Computer Science \& Mathematics \\
-Minor in Intelligent Control Systems \smallskip \\
-Courses taken: Algorithms, Pattern recognition, Natural Text Processing, Calculus, etc. \smallskip \\
-Average: 9.47
-
-{\bf Belarussian State University Lyceum, Belarus} \hfill {\em 2010 $-$ 2012} \\ 
-Associate degree in Mathematics \\
-Average: 9.8
+{\bf Belarussian State University Lyceum, Belarus} \hfill {\em 2010 $-$ 2012} \\
+Associate degree in Mathematics \hfill {\em Average: 9.8}
 
 \end{rSection}
 
