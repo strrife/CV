@@ -28,8 +28,9 @@
 \usepackage{textpos}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{enumitem}
 \usepackage[russian,english]{babel}
-
+\setcounter{secnumdepth}{4}
 \begin{textblock}{7}(0, 0.05)
 {\includegraphics[width=.23\linewidth]{photo.jpg}}
 \end{textblock}
@@ -47,7 +48,7 @@
 
 \begin{rSection}{Summary}
 
-I'm skilled fast-learning developer with a strong mathematical background constantly looking for ways to apply and enrich my knowledge. Over the past years I have worked with a variety of web technologies and I'm experenced in backend, frontend, databases and software architecture. I have good communication skills and ~2 years of working in different teams.
+I'm skilled fast-learning developer with a strong mathematical background constantly looking for ways to apply and enrich my knowledge. Over the past years I have worked with a variety of web technologies and I'm experienced in backend, frontend, databases and software architecture. I have good communication skills and ~2 years of working in different teams.
 
 \end{rSection}
 
@@ -78,25 +79,50 @@ VCS & Git, Perforce \\
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Work experience}
+\begin{rSection}{Experience}
 
 \begin{rSubsection}{DualLab}{August 2015 - Present}{Full stack Web Developer}{Minsk, Belarus}
-\item Was responsible for development of the web client and the REST API on top of the legacy SOAP API
 \item NodeJS + Express used for backend, Angular for frontend 
 \item Test-driven development (Nightmare.js and Mocha for testing)
 \item Agile Software Development (Scrum)
 \item Recommendations from my team leader and colleagues can be found on my \href{http://linkedin.com/in/mikhalchenkoa}{linkedin profile}
+
+{\bf Projects}:
+
+\begin{itemize}[leftmargin=*,label={$+$}]
+  \item {\bf REST API} \\
+	Created API on top of the existing legacy gSOAP API. 
+  \item {\bf Web client} \\
+	Worked on the prototype for the web client (products's name can't be disclosed due to NDA).
+\end{itemize}
+
 \end{rSubsection}
 
 %------------------------------------------------
 
 \begin{rSubsection}{StarOfService}{April 2014 - August 2015}{Full stack Web Developer}{Paris, France}
 \item PHP, Symfony 1.4 for backend; Angular, jQuery for frontend
-\item integration with AWS (SQS in particular)
-\item Data mining: TF-IDF-based search engine for the homepage, Mixpanel, duplicate requests detector
-\item REST API (designed by me from scratch) for the iPhone app 
 \item Agile Software Development (Kanban)
 \item Recommendations from the CEO, CTO and my team leader can be found on my \href{http://linkedin.com/in/mikhalchenkoa}{linkedin profile}
+
+{\bf Projects}:
+
+\begin{itemize}[leftmargin=*,label={$+$}]
+  \item {\bf API} for the \href{https://itunes.apple.com/fr/app/starofservice/id948344674?mt=8}{StarOfService iPhone app} \\
+	Developed the API from scratch, it implements all customer functionality of StarOfService website.
+  \item {\bf Sherlock} the service search engine \\
+	TF-IDF based search engine for service lookup for the \href{http://www.starofservice.com/}{homepage}
+  \item {\bf Request moderation tool} \\
+	A tool to moderate user's request based on user scoring system and request similarity.
+	\clearpage
+  \item {\bf Integration with AWS} \\
+	Took care of SQS integration, participated in S3 integration.
+  \item {\bf Data mining and analysis tools} \\
+	Integrated with {\bf Mixpanel}, set up funnels, created admin interfaces for site statistics (d3, Highcharts)
+  \item {\bf UX implementation} \\
+	Implemented the UX mockups for new signup, search for pros, pro profiles with Angular and bootstrap. 
+\end{itemize}
+
 \end{rSubsection}
 %------------------------------------------------
 
@@ -104,6 +130,7 @@ VCS & Git, Perforce \\
 \item Wordpress customization (creating custom post type managers)
 \item Load speed optimization (page load time reduced from 1.5s to 0.03s with custom redis-based solution)
 \end{rSubsection}
+
 %------------------------------------------------
 
 \begin{rSubsection}{Itransition}{October 2013 - January 2014}{PHP developer}{Minsk, Belarus}
@@ -111,27 +138,25 @@ VCS & Git, Perforce \\
 \item Symfony 2.2 as backend, jQuery + Bootstrap 3 as frontend, worked on a shop catalog system
 \end{rSubsection}
 
-\end{rSection}
+%------------------------------------------------
 
-\clearpage
+\begin{rSubsection}{Coding for fun}{2012 - Present}{Working on my or my friends' projects/startups}{Minsk, Belarus}
 
-%----------------------------------------------------------------------------------------
-%	Other projects
-%----------------------------------------------------------------------------------------
+\begin{itemize}[leftmargin=*,label={$+$}]
+  \item {\bf \href{http://toto.by}{ToTo.by}} \\ 
+	My friend's project that organizes and accumulates all car-related information in Belarus, helping people with the rutine of finding service stations, selling and buying vehicles.
 
-\begin{rSection}{Other projects I worked on}
+  \item {\bf \href{http://pirateminds.com/e-analytics}{E-Analytics}} \hfill {\em October 2015} \\ 
+	BI application with recommendation engine for retail and e-commerce (business analysis, feasibility study, marketing research).
 
-{\bf \href{http://toto.by}{ToTo.by}} \hfill {\em since November 2015} \\ 
-My friend's project that organizes and accumulates all car-related information in Belarus, helping people with the rutine of finding service stations, selling and buying vehicles.\\
+  \item {\bf \href{http://boxinator.xyz}{Boxinator}} \hfill {\em September 2015} \\ 
+	Cloud-based workflow management system developed with NodeJS using Dropbox API. Presented at Minsk FinTech hackaton.
 
-{\bf \href{http://pirateminds.com/e-analytics}{E-Analytics}} \hfill {\em October 2015} \\ 
-BI application with recommendation engine for retail and e-commerce (business analysis, feasibility study, marketing research) \\
+  \item {\bf \href{http://mmopricefinder.com}{MMOPriceFinder.com}} \hfill {\em July 2014} 
+	Dynamically updating World of Warcraft and other games inner currency rates. Developed with Symfony 2, Angular JS and Flat UI \\
+\end{itemize}
 
-{\bf \href{http://boxinator.xyz}{Boxinator}} \hfill {\em September 2015} \\ 
-Cloud-based workflow management system developed with NodeJS using Dropbox API. Presented at Minsk FinTech hackaton. \\
-
-{\bf \href{http://mmopricefinder.com}{MMOPriceFinder.com}} \hfill {\em July 2014} \\ 
-Dynamically updating World of Warcraft and other games inner currency rates. Developed with Symfony 2, Angular JS and Flat UI \\
+\end{rSubsection}
 
 \end{rSection}
 
