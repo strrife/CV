@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             changeTasks: {
-                files: ['*.tex'],
+                files: ['*.tex', '*.cls'],
                 tasks: ['shell']
             }
         },
